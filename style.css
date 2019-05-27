@@ -24,40 +24,40 @@ body {
 /* Header 
 ============*/
 
- .header {
-     position: absolute;
-     width: 100%;
-     top: 0;
-     left: 0;
-     z-index: 1000;
-     height: 100px;
- }
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100px;
+}
 
- .header__inner {
-     display: flex;
-     justify-content: space-between;
-     border-bottom: 1px solid #505168;
-     padding: 35px 0;
-     align-items: center;
- }
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #505168;
+    padding: 35px 0;
+    align-items: center;
+}
 
- /* Nav 
+/* Nav 
  ============*/
 
- .nav {
-     display: flex;
-     font-size: 13px;
-     font-weight: 700;
-     text-transform: uppercase;
- }
+.nav {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
- .nav__link {
-     margin-left: 50px;
-     color: #fff;
-     text-decoration: none;
-     opacity: 0.75;
-     transition: opacity .1s linear;
- }
+.nav__link {
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity .1s linear;
+}
 
 .nav__link:first-child {
     margin: 0;
@@ -70,10 +70,18 @@ body {
 /* Intro 
  ============*/
 
- .intro {
-     display: flex;
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 750px;
-    padding-top: 100px; 
-    background: #1e2242
-        url("img/Intro.jpg") center no-repeat / cover;
- }
+    padding-top: 100px;
+    background: #1e2242 url("img/Intro.jpg") center no-repeat / cover;
+}
+
+.intro__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    color: #fff;
+    font-weight: 700;
+}
